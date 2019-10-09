@@ -1,0 +1,130 @@
+body {
+    text-align: center;
+}
+header {
+    background-color: #4244B2;
+    padding: 5em 0 0 0;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    max-width: 1240px;
+    margin: auto;
+}
+header .container {
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+li a:hover {
+    background-color: white;
+    color:white;
+    padding: 17px;
+    color:#4244B2;
+}
+
+ul{
+display: flex;
+list-style-type: none;
+justify-content: space-around;
+width: 50%;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.articles article{
+    width:30%;
+}
+
+.again {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.again article{
+    width: 20%;
+}
+
+.bullshit {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    padding: 5em 0 5em 0;
+}
+.bullshit i {
+    font-size:3rem;
+    padding-bottom: 1.5em;
+}
+.welcome {
+    margin-top: 2em;
+    margin-bottom: 3em;
+    padding: 2em 0 2em 0;
+}
+
+.gray {
+    background-color: #ede2e1;
+}
+footer {
+    background-color: #392FAD;
+    padding-top: 1rem;
+}
+
+
+.back {
+    background-color:#4244B2;
+    padding: 7em 0 7em 0;
+}
+.back i {
+    padding-top: 2em;
+    font-size: 2rem;
+}
+
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+    ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .again article {
+       width: 48%;
+        
+    }
+    .bullshit .icons:nth-child(3) {
+        width: 100%;
+    }
+   
+}
+
+@media screen and (max-width: 767px) {
+nav {
+    display: none;
+}
+
+.articles {
+    flex-direction: column;
+}
+.articles article {
+    width: 100%;
+}
+
+.again article {
+    width: 100%;
+}
+
+.again {
+    flex-direction: column;
+}
+
+}
